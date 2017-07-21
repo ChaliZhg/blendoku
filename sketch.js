@@ -31,7 +31,6 @@ function draw() {
 }
 
 function touchStarted() {
-  print('mouseReleased!');
   for (var i = 0; i < blocks.length; i++) {
     for (var j = 0; j < blocks[i].length; j++){
       result = blocks[i][j].clicked()
@@ -41,4 +40,5 @@ function touchStarted() {
       }
     }
   }
+  return false
 }
